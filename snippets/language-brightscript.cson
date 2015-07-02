@@ -1,4 +1,4 @@
-'.source.vbs':
+'.source.brs':
   '<%= %>':
     'prefix': '='
     'body': '<%= $0 %>'
