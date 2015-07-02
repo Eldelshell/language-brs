@@ -1,9 +1,9 @@
 {
-  "name": "language-vbscript",
-  "main": "./lib/language-vbscript",
-  "version": "0.6.1",
-  "description": "VBScript/VBA syntax highlighting",
-  "repository": "https://github.com/reekers/language-vbscript",
+  "name": "language-brs",
+  "main": "./lib/language-brs",
+  "version": "0.0.1,
+  "description": "Roku BrightScript syntax highlighting",
+  "repository": "https://github.com/Eldelshell/language-brs",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
