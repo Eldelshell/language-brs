@@ -1,13 +1,16 @@
 '.source.brs':
-  '<%= %>':
-    'prefix': '='
-    'body': '<%= $0 %>'
-  'For … in … Next':
-    'prefix': 'forin'
-    'body': 'For ${1:var} in ${2:array}\n\t${3:\' body}\nNext'
+  'For … Each':
+    'prefix': 'foreach'
+    'body': 'for each ${1:var} in ${2:array}\n\t${3:\' body}\nend for'
+  'For … i':
+    'prefix': 'forloop'
+    'body': 'for ${1:var} = 0 to ${2:array}.count() -1 step +1\n\t${3:\' body}\nend for'
   'If … End if':
     'prefix': 'ifelse'
-    'body': 'If ${1:condition} Then\n\t${2:\' true}\nElse\n\t${3:\' false}\nEnd if'
-  'While … Wend':
+    'body': 'if ${1:condition} then\n\t${2:\' true}\nelse\n\t${3:\' false}\nend if'
+  'While … end':
     'prefix': 'while'
-    'body': 'While ${1:NOT ${2:condition}}\n\t${3:\' body}\nWend'
+    'body': 'while ${1:NOT ${2:condition}}\n\t${3:\' body}\nend while'
+  'Singleton':
+    'prefix': 'singleton'
+    'body': 'function ${1:singleton}() as Object\n\tif(m.${1:singleton} = Invalid) then \n\t\tm.${1:singleton} = {\n\t\t\t\' body\n\t\t}\n\treturn m.${1:singleton}\nend function'
